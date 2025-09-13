@@ -37,7 +37,7 @@ async def atag_all_useres(_, message):
                 break
             usernum += 1
             usertxt += f"[{m.user.first_name}](tg://openmessage?user_id={m.user.id})"
-            if usernum == 14:
+            if usernum == 1:
                 await userbot.send_message(
                     message.chat.id,
                     f"{replied.text}\n\n{usertxt}",
