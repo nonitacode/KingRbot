@@ -62,7 +62,7 @@ async def atag_all_useres(_, message):
             usernum += 1
             usertxt += f'<a href="tg://openmessage?user_id={m.user.id}">{m.user.first_name}</a>'
 
-            if usernum == 14:
+            if usernum == 1:
                 await userbot.send_message(
                     message.chat.id, f"{text}\n{usertxt}", disable_web_page_preview=True
                 )
